@@ -1,0 +1,328 @@
+/* ============================================
+   Alting Landing Page
+   Single stylesheet — no JS, no dependencies
+   ============================================ */
+
+/* --- Tokens --- */
+:root {
+  --al-dark: #1A1614;
+  --al-dark-surface: #2A2520;
+  --al-warm: #F0E8E0;
+  --al-warm-deep: #E8DED4;
+  --al-gold: #C4A24E;
+  --al-gold-light: #D4B65A;
+  --al-text-light: #E8E0D8;
+  --al-text-muted: #9A9088;
+  --al-text-dark: #2A2520;
+  --al-text-dark-muted: #7A7068;
+}
+
+/* --- Reset --- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--al-text-dark);
+  background: var(--al-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Utility --- */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================
+   1. Hero — full viewport, dark
+   ============================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--al-dark);
+  overflow: hidden;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+/* Radial gradient texture — topographic / mycelium feel */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 800px 800px at 30% 40%, rgba(196, 162, 78, 0.04) 0%, transparent 70%),
+    radial-gradient(circle 400px at 70% 60%, rgba(196, 162, 78, 0.03) 0%, transparent 60%),
+    radial-gradient(circle 200px at 50% 50%, rgba(196, 162, 78, 0.02) 0%, transparent 50%),
+    radial-gradient(circle 600px at 20% 80%, rgba(232, 222, 212, 0.02) 0%, transparent 60%),
+    radial-gradient(circle 300px at 80% 30%, rgba(232, 222, 212, 0.015) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Concentric ring pattern — subtle topographic contours */
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:
+    radial-gradient(circle, transparent 180px, rgba(196, 162, 78, 0.025) 181px, transparent 183px),
+    radial-gradient(circle, transparent 260px, rgba(196, 162, 78, 0.02) 261px, transparent 263px),
+    radial-gradient(circle, transparent 340px, rgba(196, 162, 78, 0.018) 341px, transparent 343px),
+    radial-gradient(circle, transparent 420px, rgba(196, 162, 78, 0.015) 421px, transparent 423px),
+    radial-gradient(circle, transparent 500px, rgba(196, 162, 78, 0.012) 501px, transparent 503px);
+  pointer-events: none;
+}
+
+/* Large faint typographic "A" */
+.hero__glyph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(300px, 50vw, 500px);
+  color: rgba(196, 162, 78, 0.03);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__headline {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--al-text-light);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.hero__sub {
+  font-size: 18px;
+  color: var(--al-text-muted);
+  max-width: 480px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Scroll indicator */
+.hero__scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 1;
+}
+.hero__scroll span {
+  display: block;
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, transparent, var(--al-text-muted));
+}
+
+/* ============================================
+   2. Vision — warm/blush background
+   ============================================ */
+.vision {
+  background: var(--al-warm);
+  padding: 120px 24px;
+}
+
+.vision p {
+  color: var(--al-text-dark);
+  margin-bottom: 28px;
+  font-size: 17px;
+}
+.vision p:last-child {
+  margin-bottom: 0;
+}
+
+.vision strong {
+  font-weight: 500;
+}
+
+/* ============================================
+   3. Signal — dark background, metrics
+   ============================================ */
+.signal {
+  background: var(--al-dark);
+  padding: 100px 24px;
+}
+
+.signal__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.signal__value {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(20px, 3vw, 28px);
+  color: var(--al-gold);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.signal__label {
+  font-size: 14px;
+  color: var(--al-text-muted);
+  line-height: 1.5;
+}
+
+/* ============================================
+   4. Lead Capture — warm/blush background
+   ============================================ */
+.capture {
+  background: var(--al-warm);
+  padding: 120px 24px;
+  text-align: center;
+}
+
+.capture__headline {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  color: var(--al-text-dark);
+  margin-bottom: 16px;
+}
+
+.capture__sub {
+  color: var(--al-text-dark-muted);
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.capture__form {
+  display: flex;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto 20px;
+}
+
+.capture__input {
+  flex: 1;
+  padding: 14px 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  background: var(--al-warm-deep);
+  border: 1px solid rgba(42, 37, 32, 0.12);
+  border-radius: 6px;
+  color: var(--al-text-dark);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.capture__input::placeholder {
+  color: var(--al-text-dark-muted);
+}
+.capture__input:focus {
+  border-color: var(--al-gold);
+}
+
+.capture__button {
+  padding: 14px 28px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--al-gold);
+  color: var(--al-dark);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.capture__button:hover {
+  background: var(--al-gold-light);
+}
+
+.capture__privacy {
+  font-size: 14px;
+  color: var(--al-text-dark-muted);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   5. Footer — dark
+   ============================================ */
+.footer {
+  background: var(--al-dark-surface);
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.footer__origin {
+  font-family: 'DM Serif Display', serif;
+  font-size: 17px;
+  color: var(--al-text-light);
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.footer__social a {
+  color: var(--al-text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.footer__social a:hover {
+  color: var(--al-gold);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 600px) {
+  .signal__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .capture__form {
+    flex-direction: column;
+  }
+
+  .capture__button {
+    padding: 16px;
+  }
+
+  .vision {
+    padding: 80px 24px;
+  }
+
+  .signal {
+    padding: 72px 24px;
+  }
+
+  .capture {
+    padding: 80px 24px;
+  }
+}

@@ -7,138 +7,69 @@
   <meta name="description" content="Alting is infrastructure for how communities organize, collaborate, and govern together — built from the bottom up.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav">
-    <a href="index.html" class="nav__wordmark">Alting</a>
-    <button class="nav__toggle" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="nav__links">
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="in-practice.html">In Practice</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="partners.html">For Partners</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <section class="section section--cream hero">
-    <div class="container--narrow">
-      <h1>You don't need a leader.<br>You need each other.</h1>
-      <p class="hero__sub">Alting is infrastructure for how communities organize, collaborate, and govern together — built from the bottom up.</p>
-      <div class="btn-group">
-        <a href="how-it-works.html" class="btn btn--primary">How It Works</a>
-        <a href="in-practice.html" class="btn btn--secondary">See It In Practice</a>
-      </div>
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="hero__glyph" aria-hidden="true">A</div>
+    <div class="hero__content">
+      <h1 class="hero__headline">You don't need a leader.<br>You need each other.</h1>
+      <p class="hero__sub">Alting is infrastructure for community self-governance.</p>
     </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
   </section>
 
-  <!-- The Problem -->
-  <section class="section section--white">
-    <div class="container--narrow">
-      <p class="section__label">The Problem</p>
-      <h2 class="section__heading">The systems we rely on were not designed to benefit everyone.</h2>
-      <p>They optimize for extraction: spend, engagement, clicks, accumulation. The result is widening inequality, an epidemic of loneliness, echo chambers that fuel division, and eroding trust in institutions. AI will accelerate all of this exponentially.</p>
-      <p>Top-down is no longer working. Alting is the bottom-up alternative.</p>
-    </div>
-  </section>
-
-  <!-- The Solution -->
-  <section class="section section--cream">
+  <!-- 2. Vision -->
+  <section class="vision">
     <div class="container">
-      <div class="container--narrow" style="margin-bottom: 48px;">
-        <p class="section__label">The Solution</p>
-        <h2 class="section__heading">Infrastructure, not platform.</h2>
-        <p>At its core, Alting provides a modular, contextual framework for self-governed, trust-based, democratic collaborations — called <strong>Tings</strong>. A Ting can be anything people organize around: a neighborhood block group, a savings club, a water company, a housing cooperative, a local government. The pattern is always the same: members participate as equals, make decisions transparently, and build trust through structured collaboration.</p>
+      <p>The systems we depend on were not designed to benefit everyone. They optimize for extraction — spend, engagement, clicks, accumulation. The result is widening inequality, eroding trust, and an epidemic of disconnection.</p>
+      <p>Alting is not a platform. It is infrastructure — a framework for self-governed, trust-based, democratic collaboration. Not owned. Not extracted from. Built to be governed by the people who use it.</p>
+      <p>The basic unit is the <strong>Ting</strong>: any organization people govern together. A neighborhood block group. A water company. A housing cooperative. A local government. The pattern is always the same — members participate as equals and build trust through structured collaboration.</p>
+    </div>
+  </section>
+
+  <!-- 3. Signal -->
+  <section class="signal">
+    <div class="signal__grid">
+      <div>
+        <div class="signal__value">3 active communities</div>
+        <div class="signal__label">Using this framework today</div>
       </div>
-      <div class="grid grid--3">
-        <div class="card card--white stat-card">
-          <div class="stat-card__value">1 person, 1 vote</div>
-          <p class="stat-card__label">Governance tied to personhood, not wealth or tokens</p>
-        </div>
-        <div class="card card--white stat-card">
-          <div class="stat-card__value">5 components</div>
-          <p class="stat-card__label">Identity, collaboration, governance, education, federation</p>
-        </div>
-        <div class="card card--white stat-card">
-          <div class="stat-card__value">3 active Tings</div>
-          <p class="stat-card__label">Real communities using this framework today</p>
-        </div>
+      <div>
+        <div class="signal__value">1 person, 1 vote</div>
+        <div class="signal__label">Governance tied to personhood</div>
+      </div>
+      <div>
+        <div class="signal__value">Built from the bottom up</div>
+        <div class="signal__label">Designed in Altadena, California</div>
       </div>
     </div>
   </section>
 
-  <!-- Currently Active -->
-  <section class="section section--white">
-    <div class="container">
-      <p class="section__label">Currently Active</p>
-      <h2 class="section__heading">Communities using Alting</h2>
-      <div class="grid grid--3">
-        <div class="card">
-          <span class="badge badge--active">Active</span>
-          <h3 class="card__title">Altagether</h3>
-          <p class="card__text">Post-fire neighborhood governance for Altadena. 17 zones, 600+ households organizing recovery together through block captains and democratic decision-making.</p>
-        </div>
-        <div class="card">
-          <span class="badge badge--prototype">Working Prototype</span>
-          <h3 class="card__title">Las Flores Water Co.</h3>
-          <p class="card__text">Mutual water company shareholder governance. 1,400 shareholders with transparent decision-making and democratic allocation of shared resources.</p>
-        </div>
-        <div class="card">
-          <span class="badge badge--forming">Forming</span>
-          <h3 class="card__title">Mariposa Junction</h3>
-          <p class="card__text">Commercial corridor co-design in Altadena. Local businesses and residents shaping the future of their shared neighborhood together.</p>
-        </div>
-      </div>
-    </div>
+  <!-- 4. Lead Capture -->
+  <section class="capture">
+    <h2 class="capture__headline">Something is being built.</h2>
+    <p class="capture__sub">Leave your email and we'll share it with you when it's ready.</p>
+    <!-- TODO: Replace action URL with your Formspree endpoint -->
+    <form class="capture__form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input class="capture__input" type="email" name="email" placeholder="your@email.com" required>
+      <button class="capture__button" type="submit">Join</button>
+    </form>
+    <p class="capture__privacy">No spam. No tracking. Just an invitation when the time comes.</p>
   </section>
 
-  <!-- Emotional Anchor -->
-  <section class="pull-quote section--sage-light">
-    <blockquote>
-      "We heal by becoming a community that is un-exploitable — because it is awake, connected, and protective of its own."
-    </blockquote>
-  </section>
-
-  <!-- Footer -->
+  <!-- 5. Footer -->
   <footer class="footer">
-    <div class="footer__grid">
-      <div>
-        <h3>Alting</h3>
-        <p>Infrastructure for how communities organize, collaborate, and govern together — built from the bottom up. Designed in Altadena, California.</p>
-      </div>
-      <div>
-        <h3>Pages</h3>
-        <ul class="footer__links">
-          <li><a href="how-it-works.html">How It Works</a></li>
-          <li><a href="in-practice.html">In Practice</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="partners.html">For Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>What is a Ting?</h3>
-        <p>A Ting is any organization people govern together — a block group, a water company, a land trust, a business corridor. Members participate as equals, make decisions transparently, and build trust through structured collaboration.</p>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>Alting &mdash; Petra Wennberg. Altadena, California.</p>
-    </div>
+    <p class="footer__origin">Alting — Altadena, California</p>
+    <ul class="footer__social">
+      <li><a href="https://instagram.com/joinalting" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://bsky.app/profile/joinalting.org" target="_blank" rel="noopener">Bluesky</a></li>
+      <li><a href="https://x.com/joinalting" target="_blank" rel="noopener">X</a></li>
+    </ul>
   </footer>
 
-  <script src="js/nav.js"></script>
 </body>
 </html>
