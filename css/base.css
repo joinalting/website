@@ -1,0 +1,112 @@
+/* Reset & Typography */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--line-height);
+  color: var(--alting-text);
+  background-color: var(--alting-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  color: var(--alting-ink);
+  line-height: 1.25;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-family: var(--font-body);
+  font-size: var(--text-h2);
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-h3);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--alting-sage);
+  text-decoration: none;
+  transition: color var(--hover-speed);
+}
+
+a:hover {
+  color: var(--alting-sage-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+blockquote {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--alting-ink);
+  line-height: 1.4;
+  border-left: 3px solid var(--alting-sage);
+  padding-left: 24px;
+  margin: 0;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+small {
+  font-size: var(--text-small);
+  color: var(--alting-text-secondary);
+}
+
+::selection {
+  background-color: var(--alting-sage-light);
+  color: var(--alting-ink);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  blockquote {
+    font-size: 22px;
+  }
+}
