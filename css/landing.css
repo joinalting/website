@@ -83,7 +83,12 @@ strong { font-weight: 600; }
   color: var(--alting-text);
   max-width: 600px;
   line-height: 1.6;
+  margin-bottom: 36px;
 }
+
+.hero .capture__form { margin-bottom: 16px; }
+.hero .capture__input { background: var(--alting-white); }
+.hero .capture__privacy { text-align: left; margin: 0; }
 
 /* --- Cards --- */
 .card {
