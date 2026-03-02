@@ -240,6 +240,14 @@ strong { font-weight: 600; }
   color: var(--alting-ink);
   line-height: 1.4;
 }
+.pull-quote cite {
+  display: block;
+  margin-top: 16px;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 14px;
+  color: var(--alting-text-secondary);
+}
 
 /* --- Lead Capture --- */
 .capture { text-align: center; }
