@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+
+  <!-- Starburst marks (from neighborhood strip) -->
+  <g stroke="#FAF6F0" stroke-linecap="round" fill="none" stroke-width="2.4" opacity="0.20">
+    <g transform="translate(150,120)">
+      <line y2="-28" transform="rotate(0)"/><line y2="-22" transform="rotate(45)"/>
+      <line y2="-28" transform="rotate(90)"/><line y2="-22" transform="rotate(135)"/>
+      <line y2="-28" transform="rotate(180)"/><line y2="-22" transform="rotate(225)"/>
+      <line y2="-28" transform="rotate(270)"/><line y2="-22" transform="rotate(315)"/>
+    </g>
+    <g transform="translate(980,180)">
+      <line y2="-20" transform="rotate(0)"/><line y2="-16" transform="rotate(45)"/>
+      <line y2="-20" transform="rotate(90)"/><line y2="-16" transform="rotate(135)"/>
+      <line y2="-20" transform="rotate(180)"/><line y2="-16" transform="rotate(225)"/>
+      <line y2="-20" transform="rotate(270)"/><line y2="-16" transform="rotate(315)"/>
+    </g>
+    <g transform="translate(540,480)">
+      <line y2="-24" transform="rotate(0)"/><line y2="-18" transform="rotate(45)"/>
+      <line y2="-24" transform="rotate(90)"/><line y2="-18" transform="rotate(135)"/>
+      <line y2="-24" transform="rotate(180)"/><line y2="-18" transform="rotate(225)"/>
+      <line y2="-24" transform="rotate(270)"/><line y2="-18" transform="rotate(315)"/>
+    </g>
+  </g>
+
+  <!-- Concentric circles (from savings strip) -->
+  <g fill="none" stroke="#FAF6F0" opacity="0.17">
+    <circle cx="900" cy="420" r="40" stroke-width="3"/>
+    <circle cx="900" cy="420" r="22" stroke-width="2.1"/>
+    <circle cx="900" cy="420" r="8" fill="#FAF6F0" opacity="0.15" stroke="none"/>
+    <circle cx="280" cy="340" r="32" stroke-width="2.4"/>
+    <circle cx="280" cy="340" r="16" stroke-width="1.8"/>
+    <circle cx="280" cy="340" r="5" fill="#FAF6F0" opacity="0.15" stroke="none"/>
+    <circle cx="1080" cy="90" r="26" stroke-width="2.1"/>
+    <circle cx="1080" cy="90" r="12" stroke-width="1.5"/>
+    <circle cx="1080" cy="90" r="4" fill="#FAF6F0" opacity="0.15" stroke="none"/>
+  </g>
+
+  <!-- Flowing contour lines (from land/business strips) -->
+  <g fill="none" stroke="#FAF6F0" stroke-linecap="round" opacity="0.14">
+    <path d="M0,200 Q150,170 300,210 Q500,260 700,190 Q900,140 1050,200 Q1150,230 1200,210" stroke-width="3.6"/>
+    <path d="M0,240 Q200,210 400,250 Q550,280 750,230 Q950,180 1100,240 Q1170,260 1200,250" stroke-width="3"/>
+    <path d="M0,280 Q120,260 300,290 Q480,320 680,270 Q880,230 1060,280 Q1160,300 1200,290" stroke-width="2.4"/>
+  </g>
+
+  <!-- Wavy lines (from water strip) -->
+  <g fill="none" stroke="#FAF6F0" stroke-linecap="round" opacity="0.12">
+    <path d="M0,440 Q75,420 150,440 Q225,460 300,440 Q375,420 450,440 Q525,460 600,440 Q675,420 750,440 Q825,460 900,440 Q975,420 1050,440 Q1125,460 1200,440" stroke-width="3"/>
+    <path d="M0,470 Q75,450 150,470 Q225,490 300,470 Q375,450 450,470 Q525,490 600,470 Q675,450 750,470 Q825,490 900,470 Q975,450 1050,470 Q1125,490 1200,470" stroke-width="2.4"/>
+  </g>
+
+  <!-- Scattered dots (from garden strip) -->
+  <g fill="#FAF6F0" opacity="0.22">
+    <circle cx="80" cy="60" r="3"/>
+    <circle cx="220" cy="500" r="4"/>
+    <circle cx="420" cy="100" r="2.5"/>
+    <circle cx="600" cy="320" r="3.5"/>
+    <circle cx="760" cy="80" r="2"/>
+    <circle cx="850" cy="520" r="3"/>
+    <circle cx="1020" cy="350" r="4.5"/>
+    <circle cx="1140" cy="500" r="2.5"/>
+  </g>
+  <g fill="#FAF6F0" opacity="0.12">
+    <circle cx="160" cy="380" r="2"/>
+    <circle cx="350" cy="50" r="1.8"/>
+    <circle cx="480" cy="550" r="2.2"/>
+    <circle cx="680" cy="160" r="1.5"/>
+    <circle cx="820" cy="280" r="2.8"/>
+    <circle cx="1000" cy="550" r="1.8"/>
+    <circle cx="1160" cy="160" r="2"/>
+    <circle cx="50" cy="250" r="1.5"/>
+  </g>
+  <g fill="#FAF6F0" opacity="0.08">
+    <circle cx="310" cy="240" r="1.2"/>
+    <circle cx="520" cy="400" r="1.5"/>
+    <circle cx="730" cy="540" r="1.8"/>
+    <circle cx="940" cy="60" r="1.3"/>
+    <circle cx="1100" cy="420" r="1.5"/>
+    <circle cx="130" cy="520" r="1.2"/>
+  </g>
+
+</svg>

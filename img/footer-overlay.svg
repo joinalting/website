@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+
+  <!-- Starburst marks -->
+  <g stroke="#7A8A6E" stroke-linecap="round" fill="none" stroke-width="1.4" opacity="0.28">
+    <g transform="translate(150,80)">
+      <line y2="-28" transform="rotate(0)"/><line y2="-22" transform="rotate(45)"/>
+      <line y2="-28" transform="rotate(90)"/><line y2="-22" transform="rotate(135)"/>
+      <line y2="-28" transform="rotate(180)"/><line y2="-22" transform="rotate(225)"/>
+      <line y2="-28" transform="rotate(270)"/><line y2="-22" transform="rotate(315)"/>
+    </g>
+    <g transform="translate(980,120)">
+      <line y2="-20" transform="rotate(0)"/><line y2="-16" transform="rotate(45)"/>
+      <line y2="-20" transform="rotate(90)"/><line y2="-16" transform="rotate(135)"/>
+      <line y2="-20" transform="rotate(180)"/><line y2="-16" transform="rotate(225)"/>
+      <line y2="-20" transform="rotate(270)"/><line y2="-16" transform="rotate(315)"/>
+    </g>
+    <g transform="translate(540,320)">
+      <line y2="-24" transform="rotate(0)"/><line y2="-18" transform="rotate(45)"/>
+      <line y2="-24" transform="rotate(90)"/><line y2="-18" transform="rotate(135)"/>
+      <line y2="-24" transform="rotate(180)"/><line y2="-18" transform="rotate(225)"/>
+      <line y2="-24" transform="rotate(270)"/><line y2="-18" transform="rotate(315)"/>
+    </g>
+  </g>
+
+  <!-- Concentric circles -->
+  <g fill="none" stroke="#7A8A6E" opacity="0.24">
+    <circle cx="900" cy="280" r="40" stroke-width="2"/>
+    <circle cx="900" cy="280" r="22" stroke-width="1.1"/>
+    <circle cx="900" cy="280" r="8" fill="#7A8A6E" opacity="0.20" stroke="none"/>
+    <circle cx="280" cy="220" r="32" stroke-width="1.4"/>
+    <circle cx="280" cy="220" r="16" stroke-width="0.8"/>
+    <circle cx="280" cy="220" r="5" fill="#7A8A6E" opacity="0.20" stroke="none"/>
+    <circle cx="1080" cy="60" r="26" stroke-width="1.1"/>
+    <circle cx="1080" cy="60" r="12" stroke-width="0.5"/>
+    <circle cx="1080" cy="60" r="4" fill="#7A8A6E" opacity="0.20" stroke="none"/>
+  </g>
+
+  <!-- Flowing contour lines -->
+  <g fill="none" stroke="#7A8A6E" stroke-linecap="round" opacity="0.22">
+    <path d="M0,140 Q150,110 300,150 Q500,200 700,130 Q900,80 1050,140 Q1150,170 1200,150" stroke-width="2.6"/>
+    <path d="M0,180 Q200,150 400,190 Q550,220 750,170 Q950,120 1100,180 Q1170,200 1200,190" stroke-width="2"/>
+    <path d="M0,220 Q120,200 300,230 Q480,260 680,210 Q880,170 1060,220 Q1160,240 1200,230" stroke-width="1.4"/>
+  </g>
+
+  <!-- Wavy lines -->
+  <g fill="none" stroke="#7A8A6E" stroke-linecap="round" opacity="0.18">
+    <path d="M0,300 Q75,280 150,300 Q225,320 300,300 Q375,280 450,300 Q525,320 600,300 Q675,280 750,300 Q825,320 900,300 Q975,280 1050,300 Q1125,320 1200,300" stroke-width="2"/>
+    <path d="M0,330 Q75,310 150,330 Q225,350 300,330 Q375,310 450,330 Q525,350 600,330 Q675,310 750,330 Q825,350 900,330 Q975,310 1050,330 Q1125,350 1200,330" stroke-width="1.4"/>
+  </g>
+
+  <!-- Scattered dots -->
+  <g fill="#7A8A6E" opacity="0.30">
+    <circle cx="80" cy="40" r="3"/>
+    <circle cx="220" cy="340" r="4"/>
+    <circle cx="420" cy="70" r="2.5"/>
+    <circle cx="600" cy="220" r="3.5"/>
+    <circle cx="760" cy="50" r="2"/>
+    <circle cx="850" cy="360" r="3"/>
+    <circle cx="1020" cy="240" r="4.5"/>
+    <circle cx="1140" cy="340" r="2.5"/>
+  </g>
+  <g fill="#7A8A6E" opacity="0.22">
+    <circle cx="160" cy="260" r="2"/>
+    <circle cx="350" cy="30" r="1.8"/>
+    <circle cx="480" cy="370" r="2.2"/>
+    <circle cx="680" cy="110" r="1.5"/>
+    <circle cx="820" cy="190" r="2.8"/>
+    <circle cx="1000" cy="370" r="1.8"/>
+    <circle cx="1160" cy="110" r="2"/>
+    <circle cx="50" cy="170" r="1.5"/>
+  </g>
+
+</svg>
