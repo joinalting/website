@@ -10,9 +10,9 @@
   --alting-text-secondary: #7A8A6E;
   --alting-white: #FAF6F0;
   --alting-cream: #F5EDE3;
-  --alting-sage: #D08B4C;
-  --alting-sage-light: #F8EDE0;
-  --alting-sage-dark: #B8753A;
+  --alting-sage: #E5905A;
+  --alting-sage-light: #FAF0E8;
+  --alting-sage-dark: #CC7D4E;
   --alting-gold: #B8923F;
   --alting-gold-light: #F8F3E8;
   --alting-border: #DDD5C8;
@@ -78,12 +78,12 @@ strong { font-weight: 600; }
   text-decoration: none;
   display: flex;
   align-items: baseline;
-  gap: 2px;
+  gap: 6px;
 }
 
 .header__logo {
-  font-family: var(--font-display);
-  font-size: 30px;
+  font-family: Georgia, serif;
+  font-size: 28px;
   color: var(--alting-sage);
 }
 
