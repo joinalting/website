@@ -136,6 +136,15 @@ strong { font-weight: 600; }
 .card--white { background-color: var(--alting-white); }
 .card--sage { background-color: var(--alting-sage-light); border-color: transparent; }
 
+.card__strip {
+  display: block;
+  width: calc(100% + var(--card-pad) * 2);
+  height: 48px;
+  margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 20px;
+  border-radius: calc(var(--card-radius) - 1px) calc(var(--card-radius) - 1px) 0 0;
+  object-fit: cover;
+}
+
 .card__title { font-size: 20px; font-weight: 600; color: var(--alting-ink); margin-bottom: 12px; }
 .card__text { color: var(--alting-text); margin-bottom: 0; }
 
@@ -229,6 +238,18 @@ strong { font-weight: 600; }
 .compare__col ul { list-style: none; padding: 0; }
 .compare__col li { padding: 8px 0; border-bottom: 1px solid var(--alting-border); font-size: 15px; }
 .compare__col li:last-child { border-bottom: none; }
+
+/* --- Pattern Band --- */
+.pattern-band {
+  width: 100%;
+  line-height: 0;
+  font-size: 0;
+}
+.pattern-band img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* --- Pull Quote --- */
 .pull-quote { padding: var(--section-pad) 40px; text-align: center; }
