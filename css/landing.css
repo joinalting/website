@@ -248,18 +248,6 @@ strong { font-weight: 600; }
 .compare__col li { padding: 8px 0; border-bottom: 1px solid var(--alting-border); font-size: 15px; }
 .compare__col li:last-child { border-bottom: none; }
 
-/* --- Pattern Band --- */
-.pattern-band {
-  width: 100%;
-  line-height: 0;
-  font-size: 0;
-}
-.pattern-band img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* --- Pull Quote --- */
 .pull-quote { padding: var(--section-pad) 40px; text-align: center; }
 .pull-quote blockquote {
