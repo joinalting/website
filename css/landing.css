@@ -96,7 +96,8 @@ strong { font-weight: 600; }
 
 .header__logo {
   font-family: Georgia, serif;
-  font-size: 28px;
+  font-size: 22px;
+  font-weight: 400;
   color: #fff;
   transition: color 0.3s ease;
 }
@@ -144,7 +145,7 @@ strong { font-weight: 600; }
   overflow: hidden;
   padding-top: 240px;
   padding-bottom: 200px;
-  background: url('../img/istockphoto-1482684314-1024x1024.jpg') center top/cover no-repeat;
+  background: url('../img/tegan-mierle-fDostElVhN8-unsplash.jpg') center top/cover no-repeat;
 }
 
 .hero::before {
@@ -479,7 +480,14 @@ strong { font-weight: 600; }
   border-top: 1px solid #3A4E30;
   font-size: 14px;
   color: #7A8A6E;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
+
+.footer__credit { font-size: 9px; color: #5A6E50; }
+.footer__credit a { color: #7A8A6E; }
+.footer__credit a:hover { color: var(--alting-white); }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
