@@ -145,6 +145,38 @@ strong { font-weight: 600; }
 .card--white { background-color: var(--alting-white); }
 .card--sage { background-color: var(--alting-sage-light); border-color: transparent; }
 
+/* --- Pillar Stack --- */
+.pillar-stack {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.pillar {
+  padding: 24px 0 24px 28px;
+  border-left: 3px solid var(--alting-sage);
+}
+
+.pillar + .pillar {
+  border-top: 1px solid var(--alting-border);
+}
+
+.pillar__title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--alting-ink);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.pillar__text {
+  font-size: 16px;
+  color: var(--alting-text);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 .card__strip {
   display: block;
   width: calc(100% + var(--card-pad) * 2);
