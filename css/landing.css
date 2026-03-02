@@ -17,6 +17,11 @@
   --alting-gold-light: #F8F3E8;
   --alting-border: #DDD5C8;
 
+  /* Sunset palette (Joshua Tree) */
+  --sunset-rose: #D4908A;
+  --sunset-lavender: #B8B0CC;
+  --sunset-amber: #D49A50;
+
   --font-display: 'DM Serif Display', Georgia, serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
 
@@ -121,14 +126,40 @@ strong { font-weight: 600; }
 .section__heading { margin-bottom: 28px; }
 
 /* --- Hero --- */
-.hero { padding-top: 160px; padding-bottom: var(--section-pad); }
-.hero h1 { font-size: 48px; margin-bottom: 28px; }
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: 180px;
+  padding-bottom: 140px;
+  background:
+    radial-gradient(ellipse 900px 600px at 80% 75%, rgba(229, 144, 90, 0.14) 0%, transparent 70%),
+    radial-gradient(ellipse 700px 500px at 10% 15%, rgba(184, 176, 204, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 500px 400px at 50% 100%, rgba(212, 154, 80, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 400px 300px at 90% 20%, rgba(212, 144, 138, 0.07) 0%, transparent 50%),
+    linear-gradient(175deg, #EDE5E2 0%, #F5EDE3 30%, #F5E6DA 65%, #F0DDD0 100%);
+}
+
+.hero::before {
+  content: '&';
+  position: absolute;
+  right: 4%;
+  bottom: -8%;
+  font-family: Georgia, serif;
+  font-size: 420px;
+  color: rgba(229, 144, 90, 0.06);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero h1 { font-size: 48px; margin-bottom: 28px; position: relative; }
 .hero__sub {
   font-size: 20px;
   color: var(--alting-text);
   max-width: 600px;
   line-height: 1.6;
   margin-bottom: 36px;
+  position: relative;
 }
 
 .hero .capture__form { margin-bottom: 16px; }
@@ -409,9 +440,10 @@ strong { font-weight: 600; }
 
   .section { padding: var(--section-pad-mobile) 24px; }
 
-  .hero { padding-top: 112px; }
+  .hero { padding-top: 120px; padding-bottom: var(--section-pad-mobile); }
   .hero h1 { font-size: 32px; }
   .hero__sub { font-size: 18px; }
+  .hero::before { font-size: 220px; right: -5%; bottom: -5%; }
 
   .grid--2, .grid--3 { grid-template-columns: 1fr; }
   .compare { grid-template-columns: 1fr; }
