@@ -283,6 +283,20 @@ strong { font-weight: 600; }
 .footer__links a { color: #B0ADA7; font-size: 15px; text-decoration: none; transition: color var(--hover-speed); }
 .footer__links a:hover { color: var(--alting-white); }
 
+.footer__social { list-style: none; padding: 0; }
+.footer__social li { margin-bottom: 10px; }
+.footer__social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #B0ADA7;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color var(--hover-speed);
+}
+.footer__social a:hover { color: var(--alting-white); }
+.footer__social svg { flex-shrink: 0; }
+
 .footer__bottom {
   max-width: var(--site-width);
   margin: 48px auto 0;
